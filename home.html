@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Development</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-size: x-large">Development</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item"><a class="nav-link" href="#overview">overview</a></li>
+                    <li class="navbar-item"><a class="nav-link" href="#hypotheses">goals & values</a></li>
+                    <li class="navbar-item"><a class="nav-link" href="#data">usability</a></li>
+                    <li class="navbar-item"><a class="nav-link" href="#website">website</a></li>
+                    <li class="navbar-item"><a class="nav-link" href="#conclusions">conclusions</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="outer" id="overview">
+        <div class="container">
+            <div class="card justify-content-center align-items-center">
+                <div class="card-body m-5">
+                    <h4 class="text-center">Overview</h4>
+                    <br>
+                    <p>This project was an exercise in <a class="gray-text" href="https://reactjs.org/"
+                            target="_blank">React</a>. The website I created is a list interface for a <a
+                            class="gray-text" href="https://fierce-wave-34081.herokuapp.com/" target="_blank">Savvy
+                            Sticker Supply</a> store that aggregates price and lists selected items as the user adds stickers
+                        to
+                        their cart.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="outer" id="hypotheses">
+        <div class="container">
+            <div class="card justify-content-center align-items-center">
+                <div class="card-body m-5">
+                    <h4 class="text-center">Goals & Values</h4>
+                    <br>
+                    <p>The goal of this project was to get more comfortable using React. It encouraged us to think about
+                        how to create different elements of the website using components, props, and states, and why our
+                        choices made sense. For this project includes the following features:
+                    <ul>
+                        <li>2 filtering categories</li>
+                        <li>1 sorting feature</li>
+                        <li>an aggregator section on the same page displaying items added to the aggregator and a total
+                            price aggregator</li>
+                        <li>12 item cards displaying the item image, categories that the filters use, the field the sort
+                            function uses, the property to be aggregated, and a button that adds the item to the
+                            aggregator
+                        </li>
+                    </ul>
+                    This application was designed to handle any combination of filters, and was built to ensure that all
+                    filters and sorting methods can work together without crashing the page. Additionally, an "all"
+                    option was added each of the filters to resort back to the original state without refreshing the
+                    page. In each item card there is the option of add the item to the cart, and within the shopping
+                    cart there is the option to remove the added items. The total price updates accordingly.
+                    <br>
+                    <br>
+                    Overall, the goal of the project is that same as the intended value for the user: the design should
+                    be intuitive and easy to use. The user should be able to easily understand the purpose of the
+                    filtering buttons, the sorting fields, and the aggregator, and they should be able to effectively
+                    "purchase" their desired items.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="outer" id="data">
+        <div class="container">
+            <div class="card justify-content-center align-items-center">
+                <div class="card-body m-5">
+                    <h4 class="text-center">Usability</h4>
+                    <br>
+                    <p>Describe the usability principles considered (i.e. how it relates to user interface design
+                        principles you’ve learned so far).
+                        Usability can be defined as the capability of a software product to be understood, learned,
+                        used, and be attractive to the user, when used under specififed conditions. This is incredibly
+                        important in the development of a website UI since the main objective of the website is for it
+                        to be used. The interface design principles that were considered in the creation of this website
+                        are as follows:
+                    <ul>
+                        <li><b>alignment: </b>I made all of the components on the page centered in order to make the
+                            website more readable and clean. I used flexbox to arrange them in a way that would be
+                            responsive to the size of the screen being used.</li>
+                        <li><b>typography: </b>Legibility is incredibly important. Therefore, I made sure to use a font
+                            and typeface that are simple and easily-readable.</li>
+                        <li><b>contrast: </b>This principle affects reading and attention. I decided to make the
+                            background image for my page dark to emphasize my page's content, and to also make the text
+                            color and buttons dark to stand out agaist the card background color (white). Additionally,
+                            I decided to make the color of the title white to match with the content-containing cards on
+                            the page.</li>
+                        <li><b>color palette: </b>For my color palette, I choose to stick to basic contrasting shades:
+                            neutral darks, lights, and browns. My reasoning was that I would let the exciting colors of
+                            stickers speak directly to the user, and not introduce any distractions in the form of a
+                            more bright and potentially-distracting color scheme.</li>
+                        <li><b>texture: </b>This principle has the potential to really change the <i>feel</i> of an
+                            interface. Because my website is selling sticker, I thought it would make sense to use paper
+                            for the background of the site, to give the impression of stickers on a paper. Therefore I
+                            chose an image of brown paper which has a realistic texture. My goal with this is to get the
+                            user in the mood for purchasing stickers by seeing a surface on which they could apply the
+                            items I'm selling.</li>
+                        <li><b>grouping: </b>I made sure to organize the visual elements of my page in a way that would
+                            allow the user to browse the website with maximum clarify and efficiency. I made use of
+                            whitespace to create clean organization, and grouped filtering, sorting, and aggregator
+                            functions at the top of the page while the list of products is grouped underneath them.</li>
+                        <li><b>simplicity: </b>Most importantly, I tried to keep the design of my page simple. I want it
+                            to be clear to the user what we are selling, and how they can go about making a purchase.
+                            Not using too many colors and using whitespace for organization instead of lines effectively
+                            accomplishes this goal.</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="outer" id="website">
+        <div class="container">
+            <div class="card justify-content-center align-items-center">
+                <div class="card-body m-5">
+                    <h4 class="text-center">Website</h4>
+                    <br>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img class="image" src="./images/page.png" alt="screenshot">
+                    </div>
+                    <br>
+                    <p>Please check out my <a class="gray-text" href="https://fierce-wave-34081.herokuapp.com/"
+                            target="_blank">Savvy Sticker Supply website</a> and my <a class="gray-text"
+                            href="https://github.com/eeng5/development" target="_blank">React App GitHub Repo</a>!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="outer" id="conclusions">
+        <div class="container">
+            <div class="card justify-content-center align-items-center">
+                <div class="card-body m-5">
+                    <h4 class="text-center">Conclusions</h4>
+                    <br>
+                    <p>Working on this project was very beneficial for my understanding of React. Learning how to use
+                        components, props, and state can initially seem complex, but ultimately it streamlines the
+                        process of UI development and allows for easier changes and efficient component-reuse. Thinking
+                        about the relationship between parent and child components also encourages the developer to
+                        consider the logical hierarchy of their project, and how the structure their code will be
+                        reflected in the usability of the site for the user.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="text-center py-3 footer align-items-center text-light ">
+    </footer>
+
+</body>
+
+</html>
